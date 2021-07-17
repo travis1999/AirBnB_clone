@@ -1,165 +1,227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="styles/4-common.css" />
+		<link rel="stylesheet" href="styles/3-footer.css" />
+		<link rel="stylesheet" href="styles/3-header.css" />
+		<link rel="stylesheet" href="styles/6-filters.css" />
+		<link rel="stylesheet" href="styles/8-places.css" />
+		<link rel="icon" href="images/icon.png" />
+		<title>AirBnB clone</title>
+	</head>
 
-<head>
-	<link rel="stylesheet" href="styles/4-common.css">
-	<link rel="stylesheet" href="styles/3-footer.css">
-	<link rel="stylesheet" href="styles/3-header.css">
-	<link rel="stylesheet" href="styles/6-filters.css">
-	<link rel="stylesheet" href="styles/8-places.css">
-	<link rel="icon" href="images/icon.png">
-	<title>AirBnB clone</title>
-</head>
+	<body>
+		<header>
+			<div class="logo"></div>
+		</header>
 
-<body>
-	<header>
-		<div class="logo"></div>
-	</header>
+		<div class="container">
+			<section class="filters">
+				<div class="location">
+					<h3>States</h3>
+					<h4>California, Arizona...</h4>
+					<ul class="popover">
+						<li>
+							<h2>Arizona</h2>
+							<ul>
+								<li>Phoenix</li>
+								<li>Tucson</li>
+							</ul>
+						</li>
 
-	
-	<div class="container">
-		<section class="filters">
-			<div class="location">
-				<h3>States</h3>
-				<h4>California, Arizona...</h4>
-				<ul class="popover">
-					<li>
-						<h2>Arizona</h2>
-						<ul>
-							<li>Phoenix</li>
-							<li>Tucson</li>
-						</ul>
-					<li>
-						<h2>California</h2>
-						<ul>
-							<li>San Francisco</li>
-							<li>Los Altos</li>
-						</ul>
-					</li>
-				</ul>
-			</div>
-			<div class="amenities">
-				<h3>Amenities</h3>
-				<h4>Internet, Kitchen...</h4>
-				<ul class="popover">
-					<li>Internet</li>
-					<li>TV</li>
-					<li>Kitchen</li>
-					<li>Iron</li>
-				</ul>
-			</div>
-			<button>Search</button>
-		</section>
-		<section class="places">
-            <h1>Places</h1>
-            <div class="place-view">
-                <article class="place">
-					<div class="place-header">
-						<h2>My Home</h2>
-						<div class="price">
-							<div class="price_by_night">$40</div>
-						</div>
-					</div>
-
-					<div class="information">
-						<div class="max_guest">
-							<div><img src="images/icon_group.png" alt="max_guest" class="icon"></div>
-							<div class="text">3 Guests</div>
+						<li>
+							<h2>California</h2>
+							<ul>
+								<li>San Francisco</li>
+								<li>Los Altos</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="amenities">
+					<h3>Amenities</h3>
+					<h4>Internet, Kitchen...</h4>
+					<ul class="popover">
+						<li>Internet</li>
+						<li>TV</li>
+						<li>Kitchen</li>
+						<li>Iron</li>
+					</ul>
+				</div>
+				<button>Search</button>
+			</section>
+			<section class="places">
+				<h1>Places</h1>
+				<div class="place-view">
+					<article class="place">
+						<div class="place-header">
+							<h2>My Home</h2>
+							<div class="price">
+								<div class="price_by_night">$40</div>
+							</div>
 						</div>
 
-						<div class="number_rooms">
-							<img src="images/icon_bed.png" alt="rooms" class="icon">
-							<div class="text">2 Rooms</div>
+						<div class="information">
+							<div class="max_guest">
+								<div>
+									<img
+										src="images/icon_group.png"
+										alt="max_guest"
+										class="icon"
+									/>
+								</div>
+								<div class="text">3 Guests</div>
+							</div>
+
+							<div class="number_rooms">
+								<img
+									src="images/icon_bed.png"
+									alt="rooms"
+									class="icon"
+								/>
+								<div class="text">2 Rooms</div>
+							</div>
+
+							<div class="number_bathrooms">
+								<img
+									src="images/icon_bath.png"
+									alt="number_bathrooms"
+									class="icon"
+								/>
+								<div class="text">1 Bathroom</div>
+							</div>
 						</div>
 
-						<div class="number_bathrooms">
-							<img src="images/icon_bath.png" alt="number_bathrooms" class="icon">
-							<div class="text">1 Bathroom</div>
+						<div class="description">
+							<div class="title">
+								<strong>Owner:</strong> John Wepukulu
+							</div>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Neque eius mollitia explicabo,
+								impedit provident aperiam id aspernatur, ex
+								fugiat unde velit excepturi sit aut quae,
+								temporibus deserunt consectetur laborum?
+								Inventore.
+							</p>
+						</div>
+					</article>
+
+					<article class="place">
+						<div class="place-header">
+							<h2>Tiny place</h2>
+							<div class="price">
+								<div class="price_by_night">$99</div>
+							</div>
 						</div>
 
-					</div>
+						<div class="information">
+							<div class="max_guest">
+								<div>
+									<img
+										src="images/icon_group.png"
+										alt="max_guest"
+										class="icon"
+									/>
+								</div>
+								<div class="text">8 Guests</div>
+							</div>
 
-					<div class="description">
-						<div class="title"><strong>Owner:</strong> John Wepukulu</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eius mollitia explicabo, impedit provident aperiam id aspernatur, ex fugiat unde velit excepturi sit aut quae, temporibus deserunt consectetur laborum? Inventore.</p>
-					</div>
-                    
-                </article>
+							<div class="number_rooms">
+								<img
+									src="images/icon_bed.png"
+									alt="rooms"
+									class="icon"
+								/>
+								<div class="text">4 Rooms</div>
+							</div>
 
-                <article class="place">
-					<div class="place-header">
-						<h2>Tiny place</h2>
-						<div class="price">
-							<div class="price_by_night">$99</div>
-						</div>
-					</div>
-
-					<div class="information">
-						<div class="max_guest">
-							<div><img src="images/icon_group.png" alt="max_guest" class="icon"></div>
-							<div class="text">8 Guests</div>
-						</div>
-
-						<div class="number_rooms">
-							<img src="images/icon_bed.png" alt="rooms" class="icon">
-							<div class="text">4 Rooms</div>
-						</div>
-
-						<div class="number_bathrooms">
-							<img src="images/icon_bath.png" alt="number_bathrooms" class="icon">
-							<div class="text">2 Bathrooms</div>
-						</div>
-					</div>
-
-					<div class="description">
-						<div class="title"><strong>Owner:</strong> Mr. Little</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eius mollitia explicabo, impedit provident aperiam id aspernatur, ex fugiat unde velit excepturi sit aut quae, temporibus deserunt consectetur laborum? Inventore.</p>
-					</div>
-
-                </article>
-			</div>
-
-			<div class="place-view">
-                <article class="place">
-					<div class="place-header">
-						<h2>DownTown</h2>
-						<div class="price">
-							<div class="price_by_night">$20</div>
-						</div>
-					</div>
-
-					<div class="information">
-						<div class="max_guest">
-							<div><img src="images/icon_group.png" alt="max_guest" class="icon"></div>
-							<div class="text">3 Guests</div>
+							<div class="number_bathrooms">
+								<img
+									src="images/icon_bath.png"
+									alt="number_bathrooms"
+									class="icon"
+								/>
+								<div class="text">2 Bathrooms</div>
+							</div>
 						</div>
 
-						<div class="number_rooms">
-							<img src="images/icon_bed.png" alt="rooms" class="icon">
-							<div class="text">2 Rooms</div>
+						<div class="description">
+							<div class="title">
+								<strong>Owner:</strong> Mr. Little
+							</div>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Neque eius mollitia explicabo,
+								impedit provident aperiam id aspernatur, ex
+								fugiat unde velit excepturi sit aut quae,
+								temporibus deserunt consectetur laborum?
+								Inventore.
+							</p>
+						</div>
+					</article>
+				</div>
+
+				<div class="place-view">
+					<article class="place">
+						<div class="place-header">
+							<h2>DownTown</h2>
+							<div class="price">
+								<div class="price_by_night">$20</div>
+							</div>
 						</div>
 
-						<div class="number_bathrooms">
-							<img src="images/icon_bath.png" alt="number_bathrooms" class="icon">
-							<div class="text">1 Bathroom</div>
+						<div class="information">
+							<div class="max_guest">
+								<div>
+									<img
+										src="images/icon_group.png"
+										alt="max_guest"
+										class="icon"
+									/>
+								</div>
+								<div class="text">3 Guests</div>
+							</div>
+
+							<div class="number_rooms">
+								<img
+									src="images/icon_bed.png"
+									alt="rooms"
+									class="icon"
+								/>
+								<div class="text">2 Rooms</div>
+							</div>
+
+							<div class="number_bathrooms">
+								<img
+									src="images/icon_bath.png"
+									alt="number_bathrooms"
+									class="icon"
+								/>
+								<div class="text">1 Bathroom</div>
+							</div>
 						</div>
 
-					</div>
+						<div class="description">
+							<div class="title">
+								<strong>Owner:</strong> Jane Doe
+							</div>
+							<p>
+								Lorem, ipsum dolor sit amet consectetur
+								adipisicing elit. Neque eius mollitia explicabo,
+								impedit provident aperiam id aspernatur, ex
+								fugiat unde velit excepturi sit aut quae,
+								temporibus deserunt consectetur laborum?
+								Inventore.
+							</p>
+						</div>
+					</article>
+				</div>
+			</section>
+		</div>
 
-					<div class="description">
-						<div class="title"><strong>Owner:</strong> Jane Doe</div>
-						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque eius mollitia explicabo, impedit provident aperiam id aspernatur, ex fugiat unde velit excepturi sit aut quae, temporibus deserunt consectetur laborum? Inventore.</p>
-					</div>
-
-                </article>
-			</div>
-            
-        </section>
-	</div>
-
-	<footer>
-		<div class="footer-text">Holberton School</div>
-	</footer>
-</body>
-
+		<footer>
+			<div class="footer-text">Holberton School</div>
+		</footer>
+	</body>
 </html>
